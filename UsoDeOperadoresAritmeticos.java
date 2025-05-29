@@ -4,6 +4,8 @@ public class UsoDeOperadoresAritmeticos {
     System.out.println(numero+ " " + (numero + 5) + " " + (numero - 5));
     System.out.println(numero+ " " + (numero * 5) + " " + (numero / 5));
     System.out.println(numero+ " " + (numero % 5));
+    System.out.println(numero++);
+    System.out.println(numero--);
 
     }
     
