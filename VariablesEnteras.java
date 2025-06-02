@@ -9,5 +9,5 @@ public class VariablesEnteras {
         numero=20;
         System.out.println("y ahora es"+ numero);
 
-    }
-}
+            }
+        }
