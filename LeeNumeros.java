@@ -2,11 +2,11 @@ public class LeeNumeros {
     public static void main(String[] args) {
 
     String linea;
-    System.out.println("ingresa un numero entero");
+    System.out.println("ingresa un numero entero ");
     linea =System.console().readLine();
     
-int numero1;
-numero1= Integer.parseInt(linea);
+double numero1;
+numero1= Double.parseDouble(linea);
  System.out.println("ingresa otro numero: ");
   linea= System.console().readLine();
 
