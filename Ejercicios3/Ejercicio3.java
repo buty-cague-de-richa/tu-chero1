@@ -4,12 +4,16 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        Scanner Teclado =new Scanner (System.in);
-        double pesetas,euros;
-        System.out.println("ingresa la cantidad de pesetas a convertir");
-       pesetas = Teclado.nextDouble();
-        euros = pesetas / 4.20;
-        System.out.println("la cantidad de euros seria de "+ euros);
+       Scanner scanner = new Scanner(System.in);
+
+     
+        System.out.print("Introduce la cantidad en pesetas: ");
+        double pesetas = scanner.nextDouble();
+
+        double euros = pesetas / 4.21;
+
+        
+        System.out.printf("la cantidad de euros seria de "+ euros);
 
           }
     
