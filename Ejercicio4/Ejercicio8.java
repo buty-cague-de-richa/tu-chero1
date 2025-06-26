@@ -6,10 +6,10 @@ public class Ejercicio8 {
     public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
 
-        // Entrada de datos
+      
         System.out.print("Introduzca la base imponible: ");
         double baseImponible = scanner.nextDouble();
-        scanner.nextLine(); // limpiar buffer
+        scanner.nextLine(); 
 
         System.out.print("Introduzca el tipo de IMPUESTO (general, reducido o superreducido): ");
         String tipoImpuesto = scanner.nextLine().toLowerCase();
@@ -17,7 +17,7 @@ public class Ejercicio8 {
         System.out.print("Introduzca el código promocional (nopro, mitad, meno5 o 5porc): ");
         String codigoPromo = scanner.nextLine().toLowerCase();
 
-        // Determinar porcentaje de impuesto
+       
         double impuesto = 0;
         if (tipoImpuesto.equals("general")) {
             impuesto = baseImponible * 0.21;
@@ -30,10 +30,10 @@ public class Ejercicio8 {
             return;
         }
 
-        // Calcular precio con impuesto
+       
         double precioConImpuesto = baseImponible + impuesto;
 
-        // Aplicar código promocional
+       
         double descuento = 0;
         if (codigoPromo.equals("nopro")) {
             descuento = 0;
@@ -50,7 +50,7 @@ public class Ejercicio8 {
 
         double total = precioConImpuesto - descuento;
 
-        // Resultados
+   
         System.out.printf("\nBase imponible\t\t%.2f\n", baseImponible);
         System.out.printf("IMPUESTO (%.0f%%)\t\t%.2f\n", (impuesto / baseImponible) * 100, impuesto);
         System.out.printf("Precio con IMPUESTO\t%.2f\n", precioConImpuesto);
